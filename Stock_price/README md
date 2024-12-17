@@ -1,0 +1,52 @@
+# Stock Price Prediction Project
+
+## Project Overview
+This project demonstrates a machine learning approach to stock price prediction using Python, focusing on time series analysis and linear regression.
+
+## Key Components
+- **Data Collection**: Utilized `yfinance` to download historical stock price data
+- **Feature Engineering**: Created advanced features for prediction
+- **Time-Based Splitting**: Implemented chronological data splitting (80/20 train-test)
+- **Prediction Model**: Linear Regression from scikit-learn
+
+## Technical Approach
+
+### Feature Engineering
+Created sophisticated features to improve prediction accuracy:
+- Previous day's closing price
+- Previous day's trading volume
+- 5-day moving average
+- 20-day moving average
+- Daily returns
+
+### Data Preparation
+- Chronological splitting preserves time sequence
+- Standard scaling of features
+- 80% training, 20% testing data split
+
+### Model Evaluation
+Used key metrics to assess model performance:
+- Mean Squared Error (MSE)
+- R-squared (R2) Score
+
+## Key Learnings
+- Stock price prediction is challenging
+- Machine learning models provide insights, not guaranteed predictions
+- Feature engineering is crucial in time series analysis
+
+## Technologies Used
+- Python
+- Pandas
+- Scikit-learn
+- Matplotlib
+- yfinance
+
+## Limitations
+- Basic linear regression model
+- Does not account for external market factors
+- Should not be used for actual trading decisions
+
+## Future Improvements
+- Implement more complex models (Random Forest, LSTM)
+- Add more sophisticated feature engineering
+- Incorporate external market indicators
