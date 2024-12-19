@@ -1,1 +1,56 @@
+1. **Dataset Overview:**
+```
+- Total records: 7,043 customers
+- Target variable (Churn): Imbalanced dataset (more 'No' than 'Yes')
+- Mix of numerical and categorical features
+- Complete dataset (no missing values)
+```
 
+2. **Model Performance:**
+```
+For Non-Churned Customers (0):
+- Precision: 0.86 (86% of predicted non-churners were actually non-churners)
+- Recall: 0.90 (90% of actual non-churners were correctly identified)
+- F1-score: 0.88 (balanced measure of precision and recall)
+
+For Churned Customers (1):
+- Precision: 0.69 (69% of predicted churners were actually churners)
+- Recall: 0.60 (60% of actual churners were correctly identified)
+- F1-score: 0.64
+
+Overall Accuracy: 82%
+```
+
+3. **Business Insights from Sample Data:**
+```
+- Various contract types (Month-to-month, One year, Two year)
+- Different service combinations (Phone, Internet, Security, etc.)
+- Multiple payment methods (Electronic check, Mailed check, Bank transfer)
+- Range of tenure from new customers (1 month) to long-term (45+ months)
+```
+
+
+1. **Project Approach:**
+"I developed a churn prediction model using telecom customer data. The goal was to help the company identify customers likely to leave, allowing for proactive retention efforts."
+
+2. **Data Preprocessing:**
+"I handled multiple data types:
+- Converted categorical variables like contract type and services
+- Scaled numerical features like tenure and charges
+- Encoded binary variables (Yes/No) consistently"
+
+3. **Model Performance:**
+"The model achieved 82% accuracy, with strong performance in identifying loyal customers (90% recall). While it's good at identifying customers likely to stay, there's room for improvement in identifying potential churners (60% recall)."
+
+4. **Business Value:**
+"This model could help the business by:
+- Identifying high-risk customers before they leave
+- Allowing targeted retention campaigns
+- Saving money by focusing retention efforts on the right customers"
+
+5. **Possible Improvements:**
+"To enhance the model, we could:
+- Address class imbalance using techniques like SMOTE
+- Try more complex algorithms like Random Forest
+- Include more feature engineering
+- Collect additional relevant data points"
