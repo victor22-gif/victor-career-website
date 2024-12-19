@@ -33,4 +33,3 @@ yellowbrick
 joblib
 pytest
 jupyter
-notebook
